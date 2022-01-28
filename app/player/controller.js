@@ -43,8 +43,10 @@ module.exports = {
                 })
             }
             res.status(200).json({
-                data: voucher,
-                payment
+                data: {
+                    detail : voucher,
+                    payment
+                }
             })
         } catch (error) {
             res.status(500).json({
