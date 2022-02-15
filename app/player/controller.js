@@ -27,6 +27,7 @@ module.exports = {
             })
         }
     },
+
     detailPage : async (req, res) => {
         try {
             const { id } = req.params
@@ -54,6 +55,7 @@ module.exports = {
             })
         }
     },
+
     category : async ( req,res ) => {
         try {
             const category = await categoryModel.find()
@@ -68,6 +70,7 @@ module.exports = {
             })
         }
     },
+
     checkout : async (req,res) => {
         try {
             const { accountUser, name, nominal, voucher, payment, bank } = req.body
@@ -231,7 +234,7 @@ module.exports = {
                 {
                     $group : {
                         _id : '$category',
-                        valeu: {$sum: 'value'}
+                        value: {$sum: 'value'}
                     }
                 }
             ])
