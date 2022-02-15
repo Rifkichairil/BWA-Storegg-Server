@@ -17,7 +17,7 @@ let transactionSchema = mongoose.Schema({
             type: String,
             require: [true, 'Nama Koin harus diisi']
         },
-        coinQty: {
+        coinQuantity: {
             type: String,
             require: [true, 'Jumlah koin harus diisi']
         },
