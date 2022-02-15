@@ -255,7 +255,7 @@ module.exports = {
 
 
             res.status(200).json({
-                data:count,
+                data: history,
                 count: count
             })
         } catch (error) {
